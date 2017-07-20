@@ -109,7 +109,7 @@ function getPokemonList() {
 			list = list.concat(createIntegerArray(dataObj.first, dataObj.last));
 		}
 	}
-	var x = document.getElementById('types').id;
+	var x = document.getElementById('types');
 	alert(x.options[x.selectedIndex].name)
 	return list;
 }
