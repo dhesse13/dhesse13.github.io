@@ -110,7 +110,7 @@ function getPokemonList() {
 		}
 	}
 	var x = document.getElementById('types');
-	alert(x.options[x.selectedIndex].id)
+	alert(x.options[x.selectedIndex].value)
 	return list;
 }
 
