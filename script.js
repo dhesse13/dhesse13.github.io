@@ -95,22 +95,24 @@ function getPokemonList() {
 	}
 	
 	if(document.getElementById('gen-all').checked) {
+		//var list = createIntegerArray(list_data.all.first, list_data.all.last);
 		return createIntegerArray(list_data.all.first, list_data.all.last);
 	}
-	
-	var list = [];
-	var inputs = document.getElementsByClassName('gen-checkbox');
-	//add each generation that is checked to the list
-	for(i = 0; i < inputs.length; i++) {
-		if(inputs[i].checked) {
-			var generation = inputs[i].value;
-			var dataObj = list_data['gen'+generation];
-			
-			list = list.concat(createIntegerArray(dataObj.first, dataObj.last));
+	else {
+		var list = [];
+		var inputs = document.getElementsByClassName('gen-checkbox');
+		//add each generation that is checked to the list
+		for(i = 0; i < inputs.length; i++) {
+			if(inputs[i].checked) {
+				var generation = inputs[i].value;
+				var dataObj = list_data['gen'+generation];
+				
+				list = list.concat(createIntegerArray(dataObj.first, dataObj.last));
+			}
 		}
 	}
-	var x = document.getElementById('types');
-	alert(x.options[x.selectedIndex].value)
+	//var x = document.getElementById('types');
+	//alert(x.options[x.selectedIndex].value)
 	return list;
 }
 
