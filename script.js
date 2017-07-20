@@ -112,7 +112,7 @@ function getPokemonList() {
 		}
 	}
 	//var x = document.getElementById('types');
-	//alert(x.options[x.selectedIndex].value)
+	alert(list);
 	return list;
 }
 
