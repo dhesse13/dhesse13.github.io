@@ -4,6 +4,10 @@
 		<title>Favorite Pokemon - Pick your own!</title>
 		<link href="css/style.css" type="text/css" rel="stylesheet">
 		<link href="css/meyer.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="script.js"></script>
 		<meta charset="utf-8">
 	</head>
 	<body style="background-color:#F0F0F0">
@@ -20,26 +24,26 @@
 				
 				<div id="choice">
 					<span id="pkm1">
-						<img class="egg" src="images/egg.png">
+						<img class="egg" onclick="getPokemon(1)" src="images/egg.png">
 					</span>
 					<span id="pkm2">
-						<img class="egg" src="images/egg.png">
+						<img class="egg" onclick="getPokemon(2)" src="images/egg.png">
 					</span>
 					<span id="remaining">---</span> / <span id="total">---</span> eliminated
-					<button type="button" id="button-skip" disabled>Skip</button>
+					<button type="button" id="button-skip" onclick="getPokemon(3)" disabled>Skip</button>
 					<button type="button" id="button-undo" disabled>Undo</button>
 				</div>
 				
 				<div id="settings">
 					Generations:<br/>
 					<label><input type="checkbox" value="0" id="gen-all" checked>All</label> <br/>
-					<label><input type="checkbox" value="1" class="gen-checkbox" disabled>I. (RBY)</label>
-					<label><input type="checkbox" value="2" class="gen-checkbox" disabled>II. (GSC)</label>
-					<label><input type="checkbox" value="3" class="gen-checkbox" disabled>III. (RSE)</label> <br/>
-					<label><input type="checkbox" value="4" class="gen-checkbox" disabled>IV. (DPP)</label>
-					<label><input type="checkbox" value="5" class="gen-checkbox" disabled>V. (BW)</label>
-					<label><input type="checkbox" value="6" class="gen-checkbox" disabled>VI. (XY)</label>
-					<label><input type="checkbox" value="7" class="gen-checkbox" disabled>VII. (SM)</label> <br/>
+					<label><input type="checkbox" value="1" class="gen-checkbox" id="gen1" disabled>I. (RBY)</label>
+					<label><input type="checkbox" value="2" class="gen-checkbox" id="gen2" disabled>II. (GSC)</label>
+					<label><input type="checkbox" value="3" class="gen-checkbox" id="gen3" disabled>III. (RSE)</label> <br/>
+					<label><input type="checkbox" value="4" class="gen-checkbox" id="gen4" disabled>IV. (DPP)</label>
+					<label><input type="checkbox" value="5" class="gen-checkbox" id="gen5" disabled>V. (BW)</label>
+					<label><input type="checkbox" value="6" class="gen-checkbox" id="gen6" disabled>VI. (XY)</label>
+					<label><input type="checkbox" value="7" class="gen-checkbox" id="gen7" disabled>VII. (SM)</label> <br/>
 					<label>Types Included:</label>
 					<select id="types">
 						<option value="All">All Types</option>
@@ -61,7 +65,9 @@
 						<option value="Rock">Rock</option>
 						<option value="Steel">Steel</option>
 						<option value="Water">Water</option>
-					</select>
+					</select><br/>
+					<label><input type="checkbox" id="forms">Include Alternate Forms</label>
+					<label><input type="checkbox" id="shiny" checked>Use Shinies</label>
 				</div>
 				
 				<div id="grid">
@@ -101,6 +107,5 @@
 			</div>
 		</div>
 		
-		<script src="script.js"></script>
 	</body>
 </html>
