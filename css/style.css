@@ -38,10 +38,6 @@ body {
 	background-color:rgba(50,50,50,.3);
 	width:0%
 }
-#game img {
-	height:96px;
-	width:96px;
-}
 #grid {
 	position:relative;
 	width:auto;
