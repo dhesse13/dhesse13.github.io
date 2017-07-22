@@ -160,7 +160,7 @@ function clicked(side){
         //$('#neither').hide();
     }
     if ((total < 10) && (side != 3)){
-        topGridImgArray[pokemonList.length].src = entry["MugImage"];
+        $("#i" + total.toString()).attr('src',entry["MugImage"]);
     }
     gameList.splice(gameList.indexOf(left), 1);
     gameList.splice(gameList.indexOf(right), 1);
