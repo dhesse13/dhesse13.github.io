@@ -66,10 +66,11 @@ function filter(){
     var g6 = document.getElementById("gen6").checked;
     var g7 = document.getElementById("gen7").checked;
     var forms = document.getElementById("forms").checked;
+    var mega = document.getElementById("mega").checked;
     //var shiny = document.getElementById("shiny").checked;
     
 
-    if (!(all || g1 || g2 || g3 || g4 || g5 || g6 || g7)){
+    if (!(all || g1 || g2 || g3 || g4 || g5 || g6 || g7 || mega)){
         alert("At least one checkbox must be selected!");
         return;
     }
@@ -103,7 +104,8 @@ function filter(){
             else if (g7 && (pokemon[i]["Number"] >= list_data["gen7"].first) && (pokemon[i]["Number"] <= list_data["gen7"].last)){
                 j = true;
             }
-            if (j){
+            if (j && (pokemon[i]["Mega"] == mega)){
+                if (forms || (!forms && !pokemon[i]["Form"]))
                 gameList.push(pokemon[i]);
             }
         }
@@ -196,20 +198,6 @@ function getPokemon(num){
         clicked(num);
     }
     else {
-        /*var file = new File([""],"pokemon.txt");
-        var reader = new FileReader();
-        reader.onload = function(progressEvent){
-            // Entire file
-            alert(this.result);
-
-            // By lines
-            var lines = this.result.split('\n');
-            alert(lines);
-            for(var line = 0; line < lines.length; line++){
-                //console.log(lines[line]);
-            }
-        };
-        reader.readAsText(file);*/
 		var text = readStringFromFileAtPath ("pokemon.txt");
 		text = text.split('\n');
 		var i = 0;
@@ -224,9 +212,12 @@ function getPokemon(num){
 					started = true;
 				}
 				i++;
-				var Name = text[i].replace('Name=','');
+				var NameForm = text[i].replace('Name=','').split(',');
+                var Name = NameForm[0];
+                Nameform = NameForm.shift();
 				i++;
-				var MugImage = path + text[i].replace('InternalName=','').toLowerCase() + '.gif';
+                var intName = text[i].replace('InternalName=','').toLowerCase();
+				var MugImage = path + intName + '.gif';
 				i++;
 				var Type1 = text[i].replace('Type1=','').replace(" ","").trim();
 				i++;
@@ -236,7 +227,20 @@ function getPokemon(num){
 				else {
 					Type2 = "";
 				}
-				pokemon.push({Number: Number, Name: Name, MugImage: MugImage, Type1: Type1, Type2: Type2});
+				pokemon.push({Number: Number, Name: Name, MugImage: MugImage, Type1: Type1, Type2: Type2, Form: false, Mega: false});
+                if (NameForm.length > 0){
+                    for (var j=0; j < NameForm.length; j++){
+                        if (NameForm[j].search('mega') != -1){
+                            pokemon.push({Number: 666, Name: Name, MugImage: path + intName + '-' + NameForm[j] + '.gif', Type1: Type1, Type2: Type2, Form: false, Mega: true});
+                        }
+                        else if (NameForm[j].search('alola') != -1){
+                            pokemon.push({Number: 800, Name: Name, MugImage: path + intName + '-' + NameForm[j] + '.gif', Type1: Type1, Type2: Type2, Form: true, Mega: false});
+                        }
+                        else {
+                            pokemon.push({Number: Number, Name: Name, MugImage: path + intName + '-' + NameForm[j] + '.gif', Type1: Type1, Type2: Type2, Form: true, Mega: false});
+                        }
+                    }
+                }
 			}
 			i++;
 		}

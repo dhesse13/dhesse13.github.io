@@ -56,7 +56,7 @@ BattlerEnemyY=11
 BattlerAltitude=0
 Evolutions=VENUSAUR,Level,32
 [3]
-Name=Venusaur
+Name=Venusaur,mega
 InternalName=VENUSAUR
 Type1=GRASS
 Type2=POISON
@@ -139,7 +139,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=CHARIZARD,Level,36
 [6]
-Name=Charizard
+Name=Charizard,megax,megay
 InternalName=CHARIZARD
 Type1=FIRE
 Type2=FLYING
@@ -222,7 +222,7 @@ BattlerEnemyY=5
 BattlerAltitude=0
 Evolutions=BLASTOISE,Level,36
 [9]
-Name=Blastoise
+Name=Blastoise,mega
 InternalName=BLASTOISE
 Type1=WATER
 BaseStats=79,83,100,78,85,105
@@ -386,7 +386,7 @@ BattlerEnemyY=7
 BattlerAltitude=0
 Evolutions=BEEDRILL,Level,10
 [15]
-Name=Beedrill
+Name=Beedrill,mega
 InternalName=BEEDRILL
 Type1=BUG
 Type2=POISON
@@ -472,7 +472,7 @@ BattlerEnemyY=15
 BattlerAltitude=17
 Evolutions=PIDGEOT,Level,36
 [18]
-Name=Pidgeot
+Name=Pidgeot,mega
 InternalName=PIDGEOT
 Type1=NORMAL
 Type2=FLYING
@@ -500,7 +500,7 @@ BattlerEnemyY=6
 BattlerAltitude=11
 Evolutions=
 [19]
-Name=Rattata
+Name=Rattata,alola
 InternalName=RATTATA
 Type1=NORMAL
 BaseStats=30,56,35,72,25,35
@@ -529,7 +529,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=RATICATE,Level,20
 [20]
-Name=Raticate
+Name=Raticate,alola
 InternalName=RATICATE
 Type1=NORMAL
 BaseStats=55,81,60,97,50,70
@@ -699,7 +699,7 @@ BattlerEnemyY=12
 BattlerAltitude=0
 Evolutions=RAICHU,Item,THUNDERSTONE
 [26]
-Name=Raichu
+Name=Raichu,alola
 InternalName=RAICHU
 Type1=ELECTRIC
 BaseStats=60,90,55,110,90,80
@@ -727,7 +727,7 @@ BattlerEnemyY=10
 BattlerAltitude=0
 Evolutions=
 [27]
-Name=Sandshrew
+Name=Sandshrew,alola
 InternalName=SANDSHREW
 Type1=GROUND
 BaseStats=50,75,85,40,20,30
@@ -756,7 +756,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=SANDSLASH,Level,22
 [28]
-Name=Sandslash
+Name=Sandslash,alola
 InternalName=SANDSLASH
 Type1=GROUND
 BaseStats=75,100,110,65,45,55
@@ -1010,7 +1010,7 @@ BattlerEnemyY=10
 BattlerAltitude=0
 Evolutions=
 [37]
-Name=Vulpix
+Name=Vulpix,alola
 InternalName=VULPIX
 Type1=FIRE
 BaseStats=38,41,40,65,50,65
@@ -1041,7 +1041,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=NINETALES,Item,FIRESTONE
 [38]
-Name=Ninetales
+Name=Ninetales,alola
 InternalName=NINETALES
 Type1=FIRE
 BaseStats=73,76,75,100,81,100
@@ -1390,7 +1390,7 @@ BattlerEnemyY=16
 BattlerAltitude=15
 Evolutions=
 [50]
-Name=Diglett
+Name=Diglett,alola
 InternalName=DIGLETT
 Type1=GROUND
 BaseStats=10,55,25,95,35,45
@@ -1419,7 +1419,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=DUGTRIO,Level,26
 [51]
-Name=Dugtrio
+Name=Dugtrio,alola
 InternalName=DUGTRIO
 Type1=GROUND
 BaseStats=35,80,50,120,50,70
@@ -1447,7 +1447,7 @@ BattlerEnemyY=10
 BattlerAltitude=0
 Evolutions=
 [52]
-Name=Meowth
+Name=Meowth,alola
 InternalName=MEOWTH
 Type1=NORMAL
 BaseStats=40,45,35,90,40,40
@@ -1476,7 +1476,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=PERSIAN,Level,28
 [53]
-Name=Persian
+Name=Persian,alola
 InternalName=PERSIAN
 Type1=NORMAL
 BaseStats=65,70,60,115,65,65
@@ -1819,7 +1819,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=ALAKAZAM,Trade,
 [65]
-Name=Alakazam
+Name=Alakazam,mega
 InternalName=ALAKAZAM
 Type1=PSYCHIC
 BaseStats=55,50,45,120,135,95
@@ -2073,7 +2073,7 @@ BattlerEnemyY=11
 BattlerAltitude=13
 Evolutions=
 [74]
-Name=Geodude
+Name=Geodude,alola
 InternalName=GEODUDE
 Type1=ROCK
 Type2=GROUND
@@ -2103,7 +2103,7 @@ BattlerEnemyY=30
 BattlerAltitude=25
 Evolutions=GRAVELER,Level,25
 [75]
-Name=Graveler
+Name=Graveler,alola
 InternalName=GRAVELER
 Type1=ROCK
 Type2=GROUND
@@ -2132,7 +2132,7 @@ BattlerEnemyY=21
 BattlerAltitude=0
 Evolutions=GOLEM,Trade,
 [76]
-Name=Golem
+Name=Golem,alola
 InternalName=GOLEM
 Type1=ROCK
 Type2=GROUND
@@ -2248,7 +2248,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=SLOWBRO,Level,37,SLOWKING,TradeItem,KINGSROCK
 [80]
-Name=Slowbro
+Name=Slowbro,mega
 InternalName=SLOWBRO
 Type1=WATER
 Type2=PSYCHIC
@@ -2480,7 +2480,7 @@ BattlerEnemyY=17
 BattlerAltitude=0
 Evolutions=
 [88]
-Name=Grimer
+Name=Grimer,alola
 InternalName=GRIMER
 Type1=POISON
 BaseStats=80,80,50,25,40,50
@@ -2509,7 +2509,7 @@ BattlerEnemyY=13
 BattlerAltitude=0
 Evolutions=MUK,Level,38
 [89]
-Name=Muk
+Name=Muk,alola
 InternalName=MUK
 Type1=POISON
 BaseStats=105,105,75,50,65,100
@@ -2652,7 +2652,7 @@ BattlerEnemyY=18
 BattlerAltitude=21
 Evolutions=GENGAR,Trade,
 [94]
-Name=Gengar
+Name=Gengar,mega
 InternalName=GENGAR
 Type1=GHOST
 Type2=POISON
@@ -2901,7 +2901,7 @@ BattlerEnemyY=19
 BattlerAltitude=0
 Evolutions=EXEGGUTOR,Item,LEAFSTONE
 [103]
-Name=Exeggutor
+Name=Exeggutor,alola
 InternalName=EXEGGUTOR
 Type1=GRASS
 Type2=PSYCHIC
@@ -2958,7 +2958,7 @@ BattlerEnemyY=6
 BattlerAltitude=0
 Evolutions=MAROWAK,Level,28
 [105]
-Name=Marowak
+Name=Marowak,alola
 InternalName=MAROWAK
 Type1=GROUND
 BaseStats=60,80,110,45,50,80
@@ -3239,7 +3239,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=TANGROWTH,HasMove,ANCIENTPOWER
 [115]
-Name=Kangaskhan
+Name=Kangaskhan,mega
 InternalName=KANGASKHAN
 Type1=NORMAL
 BaseStats=105,95,80,90,40,80
@@ -3584,7 +3584,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=MAGMORTAR,TradeItem,MAGMARIZER
 [127]
-Name=Pinsir
+Name=Pinsir,mega
 InternalName=PINSIR
 Type1=BUG
 BaseStats=65,125,100,85,55,70
@@ -3666,7 +3666,7 @@ BattlerEnemyY=18
 BattlerAltitude=10
 Evolutions=GYARADOS,Level,20
 [130]
-Name=Gyarados
+Name=Gyarados,mega
 InternalName=GYARADOS
 Type1=WATER
 Type2=FLYING
@@ -4002,7 +4002,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=
 [142]
-Name=Aerodactyl
+Name=Aerodactyl,mega
 InternalName=AERODACTYL
 Type1=ROCK
 Type2=FLYING
@@ -4232,7 +4232,7 @@ BattlerEnemyY=3
 BattlerAltitude=9
 Evolutions=
 [150]
-Name=Mewtwo
+Name=Mewtwo,megax,megay
 InternalName=MEWTWO
 Type1=PSYCHIC
 BaseStats=106,110,90,130,154,90
@@ -5108,7 +5108,7 @@ BattlerEnemyY=7
 BattlerAltitude=0
 Evolutions=AMPHAROS,Level,30
 [181]
-Name=Ampharos
+Name=Ampharos,mega
 InternalName=AMPHAROS
 Type1=ELECTRIC
 BaseStats=90,75,85,55,115,90
@@ -5867,7 +5867,7 @@ BattlerEnemyY=9
 BattlerAltitude=11
 Evolutions=GLISCOR,NightHoldItem,RAZORFANG
 [208]
-Name=Steelix
+Name=Steelix,mega
 InternalName=STEELIX
 Type1=STEEL
 Type2=GROUND
@@ -5981,7 +5981,7 @@ BattlerEnemyY=11
 BattlerAltitude=12
 Evolutions=
 [212]
-Name=Scizor
+Name=Scizor,mega
 InternalName=SCIZOR
 Type1=BUG
 Type2=STEEL
@@ -6041,7 +6041,7 @@ BattlerEnemyY=13
 BattlerAltitude=0
 Evolutions=
 [214]
-Name=Heracross
+Name=Heracross,mega
 InternalName=HERACROSS
 Type1=BUG
 Type2=FIGHTING
@@ -6470,7 +6470,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=HOUNDOOM,Level,24
 [229]
-Name=Houndoom
+Name=Houndoom,mega
 InternalName=HOUNDOOM
 Type1=DARK
 Type2=FIRE
@@ -7008,7 +7008,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=TYRANITAR,Level,55
 [248]
-Name=Tyranitar
+Name=Tyranitar,mega
 InternalName=TYRANITAR
 Type1=ROCK
 Type2=DARK
@@ -7178,7 +7178,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=SCEPTILE,Level,36
 [254]
-Name=Sceptile
+Name=Sceptile,mega
 InternalName=SCEPTILE
 Type1=GRASS
 BaseStats=70,85,65,120,105,85
@@ -7258,7 +7258,7 @@ BattlerEnemyY=6
 BattlerAltitude=0
 Evolutions=BLAZIKEN,Level,36
 [257]
-Name=Blaziken
+Name=Blaziken,mega
 InternalName=BLAZIKEN
 Type1=FIRE
 Type2=FIGHTING
@@ -7339,7 +7339,7 @@ BattlerEnemyY=10
 BattlerAltitude=0
 Evolutions=SWAMPERT,Level,36
 [260]
-Name=Swampert
+Name=Swampert,mega
 InternalName=SWAMPERT
 Type1=WATER
 Type2=GROUND
@@ -7939,7 +7939,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=GARDEVOIR,Level,30,GALLADE,ItemMale,DAWNSTONE
 [282]
-Name=Gardevoir
+Name=Gardevoir,mega
 InternalName=GARDEVOIR
 Type1=PSYCHIC
 Type2=FAIRY
@@ -8482,7 +8482,7 @@ BattlerEnemyY=7
 BattlerAltitude=0
 Evolutions=
 [302]
-Name=Sableye
+Name=Sableye,mega
 InternalName=SABLEYE
 Type1=DARK
 Type2=GHOST
@@ -8510,7 +8510,7 @@ BattlerEnemyY=7
 BattlerAltitude=0
 Evolutions=
 [303]
-Name=Mawile
+Name=Mawile,mega
 InternalName=MAWILE
 Type1=STEEL
 Type2=FAIRY
@@ -8596,7 +8596,7 @@ BattlerEnemyY=14
 BattlerAltitude=0
 Evolutions=AGGRON,Level,42
 [306]
-Name=Aggron
+Name=Aggron,mega
 InternalName=AGGRON
 Type1=STEEL
 Type2=ROCK
@@ -8652,7 +8652,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=MEDICHAM,Level,37
 [308]
-Name=Medicham
+Name=Medicham,mega
 InternalName=MEDICHAM
 Type1=FIGHTING
 Type2=PSYCHIC
@@ -8706,7 +8706,7 @@ BattlerEnemyY=10
 BattlerAltitude=0
 Evolutions=MANECTRIC,Level,26
 [310]
-Name=Manectric
+Name=Manectric,mega
 InternalName=MANECTRIC
 Type1=ELECTRIC
 BaseStats=70,75,60,105,105,60
@@ -8951,7 +8951,7 @@ BattlerEnemyY=17
 BattlerAltitude=19
 Evolutions=SHARPEDO,Level,30
 [319]
-Name=Sharpedo
+Name=Sharpedo,mega
 InternalName=SHARPEDO
 Type1=WATER
 Type2=DARK
@@ -9063,7 +9063,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=CAMERUPT,Level,33
 [323]
-Name=Camerupt
+Name=Camerupt,mega
 InternalName=CAMERUPT
 Type1=FIRE
 Type2=GROUND
@@ -9367,7 +9367,7 @@ BattlerEnemyY=24
 BattlerAltitude=17
 Evolutions=ALTARIA,Level,35
 [334]
-Name=Altaria
+Name=Altaria,mega
 InternalName=ALTARIA
 Type1=DRAGON
 Type2=FLYING
@@ -9831,7 +9831,7 @@ BattlerEnemyY=14
 BattlerAltitude=0
 Evolutions=
 [351]
-Name=Castform
+Name=Castform,rainy,sunny,snowy
 InternalName=CASTFORM
 Type1=NORMAL
 BaseStats=70,70,70,70,70,70
@@ -9916,7 +9916,7 @@ BattlerEnemyY=23
 BattlerAltitude=29
 Evolutions=BANETTE,Level,37
 [354]
-Name=Banette
+Name=Banette,mega
 InternalName=BANETTE
 Type1=GHOST
 BaseStats=64,115,65,65,83,63
@@ -10051,7 +10051,7 @@ BattlerEnemyY=14
 BattlerAltitude=20
 Evolutions=
 [359]
-Name=Absol
+Name=Absol,mega
 InternalName=ABSOL
 Type1=DARK
 BaseStats=65,130,60,75,75,60
@@ -10132,7 +10132,7 @@ BattlerEnemyY=7
 BattlerAltitude=0
 Evolutions=GLALIE,Level,42,FROSLASS,ItemFemale,DAWNSTONE
 [362]
-Name=Glalie
+Name=Glalie,mega
 InternalName=GLALIE
 Type1=ICE
 BaseStats=80,80,80,80,80,80
@@ -10435,7 +10435,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=SALAMENCE,Level,50
 [373]
-Name=Salamence
+Name=Salamence,mega
 InternalName=SALAMENCE
 Type1=DRAGON
 Type2=FLYING
@@ -10519,7 +10519,7 @@ BattlerEnemyY=16
 BattlerAltitude=3
 Evolutions=METAGROSS,Level,45
 [376]
-Name=Metagross
+Name=Metagross,mega
 InternalName=METAGROSS
 Type1=STEEL
 Type2=PSYCHIC
@@ -10625,7 +10625,7 @@ BattlerEnemyY=21
 BattlerAltitude=0
 Evolutions=
 [380]
-Name=Latias
+Name=Latias,mega
 InternalName=LATIAS
 Type1=DRAGON
 Type2=PSYCHIC
@@ -10651,7 +10651,7 @@ BattlerEnemyY=9
 BattlerAltitude=11
 Evolutions=
 [381]
-Name=Latios
+Name=Latios,mega
 InternalName=LATIOS
 Type1=DRAGON
 Type2=PSYCHIC
@@ -10677,7 +10677,7 @@ BattlerEnemyY=7
 BattlerAltitude=10
 Evolutions=
 [382]
-Name=Kyogre
+Name=Kyogre,primal
 InternalName=KYOGRE
 Type1=WATER
 BaseStats=100,100,90,90,150,140
@@ -10702,7 +10702,7 @@ BattlerEnemyY=101
 BattlerAltitude=0
 Evolutions=
 [383]
-Name=Groudon
+Name=Groudon,primal
 InternalName=GROUDON
 Type1=GROUND
 BaseStats=100,150,140,90,100,90
@@ -10727,7 +10727,7 @@ BattlerEnemyY=14
 BattlerAltitude=0
 Evolutions=
 [384]
-Name=Rayquaza
+Name=Rayquaza,mega
 InternalName=RAYQUAZA
 Type1=DRAGON
 Type2=FLYING
@@ -10782,7 +10782,7 @@ BattlerEnemyY=22
 BattlerAltitude=17
 Evolutions=
 [386]
-Name=Deoxys
+Name=Deoxys,attack,defense,speed
 InternalName=DEOXYS
 Type1=PSYCHIC
 BaseStats=50,150,50,150,150,50
@@ -11462,7 +11462,7 @@ BattlerEnemyY=10
 BattlerAltitude=0
 Evolutions=
 [412]
-Name=Burmy
+Name=Burmy,trash,sandy
 InternalName=BURMY
 Type1=BUG
 BaseStats=40,29,45,36,29,45
@@ -11488,7 +11488,7 @@ BattlerEnemyY=21
 BattlerAltitude=26
 Evolutions=WORMADAM,LevelFemale,20,MOTHIM,LevelMale,20
 [413]
-Name=Wormadam
+Name=Wormadam,trash,sandy
 InternalName=WORMADAM
 Type1=BUG
 Type2=GRASS
@@ -11704,7 +11704,7 @@ BattlerEnemyY=6
 BattlerAltitude=0
 Evolutions=CHERRIM,Level,25
 [421]
-Name=Cherrim
+Name=Cherrim,sunshine
 InternalName=CHERRIM
 Type1=GRASS
 BaseStats=70,60,70,85,87,78
@@ -11730,7 +11730,7 @@ BattlerEnemyY=5
 BattlerAltitude=0
 Evolutions=
 [422]
-Name=Shellos
+Name=Shellos,east
 InternalName=SHELLOS
 Type1=WATER
 BaseStats=76,48,48,34,57,62
@@ -11757,7 +11757,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=GASTRODON,Level,30
 [423]
-Name=Gastrodon
+Name=Gastrodon,east
 InternalName=GASTRODON
 Type1=WATER
 Type2=GROUND
@@ -11890,7 +11890,7 @@ BattlerEnemyY=7
 BattlerAltitude=0
 Evolutions=LOPUNNY,Happiness,
 [428]
-Name=Lopunny
+Name=Lopunny,mega
 InternalName=LOPUNNY
 Type1=NORMAL
 BaseStats=65,76,84,105,54,96
@@ -12346,7 +12346,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=GARCHOMP,Level,48
 [445]
-Name=Garchomp
+Name=Garchomp,mega
 InternalName=GARCHOMP
 Type1=DRAGON
 Type2=GROUND
@@ -12428,7 +12428,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=LUCARIO,HappinessDay,
 [448]
-Name=Lucario
+Name=Lucario,mega
 InternalName=LUCARIO
 Type1=FIGHTING
 Type2=STEEL
@@ -12748,7 +12748,7 @@ BattlerEnemyY=14
 BattlerAltitude=0
 Evolutions=ABOMASNOW,Level,40
 [460]
-Name=Abomasnow
+Name=Abomasnow,mega
 InternalName=ABOMASNOW
 Type1=GRASS
 Type2=ICE
@@ -13143,7 +13143,7 @@ BattlerEnemyY=-3
 BattlerAltitude=8
 Evolutions=
 [475]
-Name=Gallade
+Name=Gallade,mega
 InternalName=GALLADE
 Type1=PSYCHIC
 Type2=FIGHTING
@@ -13248,7 +13248,7 @@ BattlerEnemyY=15
 BattlerAltitude=18
 Evolutions=
 [479]
-Name=Rotom
+Name=Rotom,frost,fan,heat,mow,wash
 InternalName=ROTOM
 Type1=ELECTRIC
 Type2=GHOST
@@ -13448,7 +13448,7 @@ BattlerEnemyY=28
 BattlerAltitude=0
 Evolutions=
 [487]
-Name=Giratina
+Name=Giratina,origin
 InternalName=GIRATINA
 Type1=GHOST
 Type2=DRAGON
@@ -13571,7 +13571,7 @@ BattlerEnemyY=12
 BattlerAltitude=17
 Evolutions=
 [492]
-Name=Shaymin
+Name=Shaymin,sky
 InternalName=SHAYMIN
 Type1=GRASS
 BaseStats=100,100,100,100,100,100
@@ -14325,7 +14325,7 @@ BattlerEnemyY=18
 BattlerAltitude=16
 Evolutions=UNFEZANT,Level,32
 [521]
-Name=Unfezant
+Name=Unfezant,f
 InternalName=UNFEZANT
 Type1=NORMAL
 Type2=FLYING
@@ -14591,7 +14591,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=
 [531]
-Name=Audino
+Name=Audino,mega
 InternalName=AUDINO
 Type1=NORMAL
 BaseStats=103,60,86,50,60,86
@@ -15101,7 +15101,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=
 [550]
-Name=Basculin
+Name=Basculin,blue
 InternalName=BASCULIN
 Type1=WATER
 BaseStats=70,92,65,98,80,55
@@ -15235,7 +15235,7 @@ BattlerEnemyY=11
 BattlerAltitude=0
 Evolutions=DARMANITAN,Level,35
 [555]
-Name=Darmanitan
+Name=Darmanitan,zen
 InternalName=DARMANITAN
 Type1=FIRE
 BaseStats=105,140,55,95,30,55
@@ -16022,7 +16022,7 @@ BattlerEnemyY=9
 BattlerAltitude=10
 Evolutions=
 [585]
-Name=Deerling
+Name=Deerling,summer,winter,autumn
 InternalName=DEERLING
 Type1=NORMAL
 Type2=GRASS
@@ -16050,7 +16050,7 @@ BattlerEnemyY=6
 BattlerAltitude=0
 Evolutions=SAWSBUCK,Level,34
 [586]
-Name=Sawsbuck
+Name=Sawsbuck,summer,winter,autumn
 InternalName=SAWSBUCK
 Type1=NORMAL
 Type2=GRASS
@@ -16218,7 +16218,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=
 [592]
-Name=Frillish
+Name=Frillish,f
 InternalName=FRILLISH
 Type1=WATER
 Type2=GHOST
@@ -16245,7 +16245,7 @@ BattlerEnemyY=12
 BattlerAltitude=11
 Evolutions=JELLICENT,Level,40
 [593]
-Name=Jellicent
+Name=Jellicent,f
 InternalName=JELLICENT
 Type1=WATER
 Type2=GHOST
@@ -17489,7 +17489,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=
 [641]
-Name=Tornadus
+Name=Tornadus,therian
 InternalName=TORNADUS
 Type1=FLYING
 BaseStats=79,115,70,111,125,80
@@ -17515,7 +17515,7 @@ BattlerEnemyY=8
 BattlerAltitude=9
 Evolutions=
 [642]
-Name=Thundurus
+Name=Thundurus,therian
 InternalName=THUNDURUS
 Type1=ELECTRIC
 Type2=FLYING
@@ -17592,7 +17592,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=
 [645]
-Name=Landorus
+Name=Landorus,therian
 InternalName=LANDORUS
 Type1=GROUND
 Type2=FLYING
@@ -17619,7 +17619,7 @@ BattlerEnemyY=8
 BattlerAltitude=16
 Evolutions=
 [646]
-Name=Kyurem
+Name=Kyurem,black,white
 InternalName=KYUREM
 Type1=DRAGON
 Type2=ICE
@@ -17645,7 +17645,7 @@ BattlerEnemyY=14
 BattlerAltitude=0
 Evolutions=
 [647]
-Name=Keldeo
+Name=Keldeo,resolute
 InternalName=KELDEO
 Type1=WATER
 Type2=FIGHTING
@@ -17671,7 +17671,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=
 [648]
-Name=Meloetta
+Name=Meloetta,pirouette
 InternalName=MELOETTA
 Type1=NORMAL
 Type2=PSYCHIC
@@ -18181,7 +18181,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=PYROAR,Level,35
 [668]
-Name=Pyroar
+Name=Pyroar,f
 InternalName=PYROAR
 Type1=FIRE
 Type2=NORMAL
@@ -18432,7 +18432,7 @@ BattlerEnemyY=5
 BattlerAltitude=0
 Evolutions=MEOWSTIC,Level,25
 [678]
-Name=Meowstic
+Name=Meowstic,f
 InternalName=MEOWSTIC
 Type1=PSYCHIC
 BaseStats=74,48,76,104,83,81
@@ -18509,7 +18509,7 @@ BattlerEnemyY=4
 BattlerAltitude=1
 Evolutions=AEGISLASH,Item,DUSKSTONE
 [681]
-Name=Aegislash
+Name=Aegislash,blade
 InternalName=AEGISLASH
 Type1=STEEL
 Type2=GHOST
@@ -19412,7 +19412,7 @@ BattlerEnemyY=10
 BattlerAltitude=1
 Evolutions=
 [716]
-Name=Xerneas
+Name=Xerneas,active
 InternalName=XERNEAS
 Type1=FAIRY
 BaseStats=126,131,95,99,131,98
@@ -19461,7 +19461,7 @@ BattlerEnemyY=5
 BattlerAltitude=5
 Evolutions=
 [718]
-Name=Zygarde
+Name=Zygarde,10,complete
 InternalName=ZYGARDE
 Type1=DRAGON
 Type2=GROUND
@@ -19486,7 +19486,7 @@ BattlerEnemyY=8
 BattlerAltitude=0
 Evolutions=
 [719]
-Name=Diancie
+Name=Diancie,mega
 InternalName=DIANCIE
 Type1=ROCK
 Type2=FAIRY
@@ -19511,7 +19511,7 @@ BattlerEnemyY=9
 BattlerAltitude=10
 Evolutions=
 [720]
-Name=Hoopa
+Name=Hoopa,unbound
 InternalName=HOOPA
 Type1=PSYCHIC
 Type2=GHOST
@@ -20076,7 +20076,7 @@ BattlerEnemyY=35
 BattlerAltitude=0
 Evolutions=
 [741]
-Name=Oricorio
+Name=Oricorio,sensu,pompom,pau
 InternalName=ORICORIO
 Type1=FIRE
 Type2=FLYING
@@ -20188,7 +20188,7 @@ BattlerEnemyY=4
 BattlerAltitude=0
 Evolutions=LYCANROC,Level,25
 [745]
-Name=Lycanroc
+Name=Lycanroc,midnight
 InternalName=LYCANROC
 Type1=ROCK
 BaseStats=75,115,65,112,55,65
@@ -20214,7 +20214,7 @@ BattlerEnemyY=7
 BattlerAltitude=0
 Evolutions=
 [746]
-Name=Wishiwashi
+Name=Wishiwashi,school
 InternalName=WISHIWASHI
 Type1=WATER
 BaseStats=45,20,20,40,25,25
@@ -20979,7 +20979,7 @@ BattlerEnemyY=9
 BattlerAltitude=0
 Evolutions=
 [774]
-Name=Minior
+Name=Minior,indigo
 InternalName=MINIOR
 Type1=ROCK
 Type2=FLYING
