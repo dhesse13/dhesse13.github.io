@@ -74,3 +74,6 @@ button#skip {
 .hidden {
 	display:none;
 }
+.pokeImages {
+	margin:20px;
+}
