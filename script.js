@@ -74,32 +74,33 @@ function filter(){
         return;
     }
     var j;
+	var type = $("#types").val().trim();
     for (var i = 0; i < pokemon.length; i++){
         j = false;
-        var type = $("#types").val();
-        if ((type == "All") || (type == pokemon[i]["Type1"]) || (type == pokemon[i]["Type2"])){
+		//alert(pokemon[i]["Type1"] == type);
+        if ((type == "All") || (pokemon[i]["Type1"] == type) || (pokemon[i]["Type2"] == type)){
             if (all){
                 j = true;
             }
-            else if (g1 && (pokemon[i]["Number"] >= list_data[gen1].first) && (pokemon[i]["Number"] <= list_data[gen1].last)){
+            else if (g1 && (pokemon[i]["Number"] >= list_data["gen1"].first) && (pokemon[i]["Number"] <= list_data["gen1"].last)){
                 j = true;
             }
-            else if (g2 && (pokemon[i]["Number"] >= list_data[gen2].first) && (pokemon[i]["Number"] <= list_data[gen2].last)){
+            else if (g2 && (pokemon[i]["Number"] >= list_data["gen2"].first) && (pokemon[i]["Number"] <= list_data["gen2"].last)){
                 j = true;
             }
-            else if (g3 && (pokemon[i]["Number"] >= list_data[gen3].first) && (pokemon[i]["Number"] <= list_data[gen3].last)){
+            else if (g3 && (pokemon[i]["Number"] >= list_data["gen3"].first) && (pokemon[i]["Number"] <= list_data["gen3"].last)){
                 j = true;
             }
-            else if (g4 && (pokemon[i]["Number"] >= list_data[gen4].first) && (pokemon[i]["Number"] <= list_data[gen4].last)){
+            else if (g4 && (pokemon[i]["Number"] >= list_data["gen4"].first) && (pokemon[i]["Number"] <= list_data["gen4"].last)){
                 j = true;
             }
-            else if (g5 && (pokemon[i]["Number"] >= list_data[gen5].first) && (pokemon[i]["Number"] <= list_data[gen5].last)){
+            else if (g5 && (pokemon[i]["Number"] >= list_data["gen5"].first) && (pokemon[i]["Number"] <= list_data["gen5"].last)){
                 j = true;
             }
-            else if (g6 && (pokemon[i]["Number"] >= list_data[gen6].first) && (pokemon[i]["Number"] <= list_data[gen6].last)){
+            else if (g6 && (pokemon[i]["Number"] >= list_data["gen6"].first) && (pokemon[i]["Number"] <= list_data["gen6"].last)){
                 j = true;
             }
-            else if (g7 && (pokemon[i]["Number"] >= list_data[gen7].first) && (pokemon[i]["Number"] <= list_data[gen7].last)){
+            else if (g7 && (pokemon[i]["Number"] >= list_data["gen7"].first) && (pokemon[i]["Number"] <= list_data["gen7"].last)){
                 j = true;
             }
             if (j){
@@ -227,14 +228,19 @@ function getPokemon(num){
 				i++;
 				var MugImage = path + text[i].replace('InternalName=','').toLowerCase() + '.gif';
 				i++;
-				var Type1 = text[i].replace('Type1=','');
+				var Type1 = text[i].replace('Type1=','').replace(" ","").trim();
 				i++;
-				var Type2 = text[i].replace('Type2=','');
+				if (text[i][0] == "T"){
+					var Type2 = text[i].replace('Type2=','').replace(' ','').trim();
+				}
+				else {
+					Type2 = "";
+				}
 				pokemon.push({Number: Number, Name: Name, MugImage: MugImage, Type1: Type1, Type2: Type2});
 			}
 			i++;
 		}
-		//alert(pokemon[0]["MugImage"]);
+		//alert(pokemon[0]["Type1"]);
 		filter();
     }
 }
