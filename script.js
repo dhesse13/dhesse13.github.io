@@ -11,7 +11,7 @@ var list_data = {
 	all : {
 		id : 0,
 		first : 1,
-		last : 802
+		last : 807
 	},
 	gen1 : {
 		id : 1,
@@ -46,7 +46,7 @@ var list_data = {
 	gen7 : {
 		id : 7,
 		first : 722,
-		last : 802
+		last : 807
 	},
 	test: {
 		id : 8,
@@ -208,7 +208,7 @@ function getPokemon(num){
 		while (!started){
 			if (text[i][0] == '['){
 				var Number = parseInt(text[i].replace('[','').replace(']',''));
-				if (Number == 802){
+				if (Number == 807){
 					started = true;
 				}
 				i++;
