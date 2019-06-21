@@ -15,6 +15,16 @@
 				$('#settings').show();
 				$('#grid').hide();
 			});
+			
+			function all_checked(){
+				for (var i = 1;i<8;i++){
+					document.getElementById("gen" + i.toString()).disabled = document.getElementById("gen-all").checked;
+				}
+			}
+			
+			function gen_checked(){
+				document.getElementById("gen-all").disabled = (document.getElementById("gen1") || document.getElementById("gen2") || document.getElementById("gen3") || document.getElementById("gen4") || document.getElementById("gen5") || document.getElementById("gen6") || document.getElementById("gen7"));
+			}
 		</script>
 		<meta charset="utf-8">
 	</head>
