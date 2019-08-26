@@ -143,13 +143,13 @@ function filter(){
 }
 
 function gen_ranked(){
-    $('#pic1').attr("src", newpoke["MugImage"]);
-    $('#pic2').attr("src", oldpoke["MugImage"]);
     var txt = "";
     for (var i = 1; i < ranklist.length + 1; i++){
         txt = txt + i.toString() + ". " + ranklist[i - 1]["Name"] + "<br>";
     }
     $('#ranks').html(txt);
+    $('#pic1').attr("src", newpoke["MugImage"]);
+    $('#pic2').attr("src", oldpoke["MugImage"]);
 }
 
 function generate(){
