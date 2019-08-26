@@ -1,12 +1,18 @@
 var pokemon = [];
 var gameList = [];
 var winners = [];
+var ranklist = [];
+var lList = [];
+var rList = [];
+var newpoke;
+var oldpoke;
 var topGridImgArray = document.querySelectorAll('#grid img');
 var started = false;
 var total = 0;
 var row = 0
 var left;
 var right;
+var ranked;
 var list_data = {
 	all : {
 		id : 0,
@@ -67,6 +73,7 @@ function filter(){
     var g7 = document.getElementById("gen7").checked;
     var forms = document.getElementById("forms").checked;
     var mega = document.getElementById("mega").checked;
+    ranked = document.getElementById("ranking").checked;
     //var shiny = document.getElementById("shiny").checked;
     
 
@@ -117,12 +124,32 @@ function filter(){
     }
     alert(str);*/
     $('#settings').hide();
-    $('#grid').show();
     total = gameList.length;
     max = gameList.length;
     $('#remaining').text(max-total)
     $('#total').text(max)
-    generate();
+    if (ranked){
+        $('#button-skip').hide();
+        newpoke = gameList[Math.floor(Math.random() * gameList.length)];
+        gameList.remove(newpoke)
+        oldpoke = gameList[Math.floor(Math.random() * gameList.length)];
+        gameList.remove(oldpoke)
+        ranklist.push(oldpoke);
+        gen_ranked();
+    } else {
+        $('#grid').show();
+        generate();
+    }
+}
+
+function gen_ranked(){
+    $('#pic1').attr("src", left["MugImage"]);
+    $('#pic2').attr("src", right["MugImage"]);
+    var txt = "";
+    for (var i = 1; i < ranklist.length + 1; i++){
+        txt = txt + i.toString() + ". " + ranklist[i - 1]["Name"] + "\n";
+    }
+    $('#ranks').text(txt);
 }
 
 function generate(){
@@ -139,7 +166,50 @@ function generate(){
     $('#pic2').attr("src", right["MugImage"]);
 }
 
+function clicked_ranked(side){
+    if (side == 1){
+        if (lList.length == 0){
+            ranklist.splice(ranklist.indexOf(oldpoke),0,newpoke);
+            newpoke = gameList[Math.floor(Math.random() * gameList.length)];
+            gameList.remove(newpoke);
+            var center = Math.round((ranklist.length - 1) / 2);
+            oldpoke = ranklist[center];
+            rList = ranklist.slice(center + 1, ranklist.length);
+            lList = ranklist.slice(0,center);
+            gen_ranked()
+        } else {
+            var center = Math.round((lList.length - 1) / 2);
+            oldpoke = lList[center];
+            rList = lList.slice(center + 1, lList.length);
+            lList = lList.slice(0,center);
+            gen_ranked()
+        }
+    }
+    else if (side == 2){
+        if (rList.length == 0){
+            ranklist.splice(ranklist.indexOf(oldpoke) + 1,0,newpoke);
+            newpoke = gameList[Math.floor(Math.random() * gameList.length)];
+            gameList.remove(newpoke);
+            var center = Math.round((ranklist.length - 1) / 2);
+            oldpoke = ranklist[center];
+            rList = ranklist.slice(center + 1, ranklist.length);
+            lList = ranklist.slice(0,center);
+            gen_ranked()
+        } else {
+            var center = Math.round((rList.length - 1) / 2);
+            oldpoke = rList[center];
+            lList = rList.slice(0,center);
+            rList = rList.slice(center + 1, rList.length);
+            gen_ranked()
+        }
+    }
+}
+
 function clicked(side){
+    if (ranked){
+        clicked_ranked(side);
+        return;
+    }
     var entry;
     if (side == 1) {
         winners.push(left);
@@ -248,3 +318,14 @@ function getPokemon(num){
 		filter();
     }
 }
+
+Array.prototype.remove = function() {
+    var what, a = arguments, L = a.length, ax;
+    while (L && this.length) {
+        what = a[--L];
+        while ((ax = this.indexOf(what)) !== -1) {
+            this.splice(ax, 1);
+        }
+    }
+    return this;
+};
