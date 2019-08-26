@@ -147,9 +147,9 @@ function gen_ranked(){
     $('#pic2').attr("src", oldpoke["MugImage"]);
     var txt = "";
     for (var i = 1; i < ranklist.length + 1; i++){
-        txt = txt + i.toString() + ". " + ranklist[i - 1]["Name"] + "\n";
+        txt = txt + i.toString() + ". " + ranklist[i - 1]["Name"] + "<br>";
     }
-    $('#ranks').text(txt);
+    $('#ranks').html(txt);
 }
 
 function generate(){
