@@ -143,8 +143,8 @@ function filter(){
 }
 
 function gen_ranked(){
-    $('#pic1').attr("src", left["MugImage"]);
-    $('#pic2').attr("src", right["MugImage"]);
+    $('#pic1').attr("src", newpoke["MugImage"]);
+    $('#pic2').attr("src", oldpoke["MugImage"]);
     var txt = "";
     for (var i = 1; i < ranklist.length + 1; i++){
         txt = txt + i.toString() + ". " + ranklist[i - 1]["Name"] + "\n";
