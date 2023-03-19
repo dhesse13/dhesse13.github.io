@@ -19498,7 +19498,7 @@ BattlerEnemyY=5
 BattlerAltitude=5
 Evolutions=
 [718]
-Name=Zygarde,10%,complete
+Name=Zygarde,10 percent,complete
 InternalName=ZYGARDE
 Type1=DRAGON,DRAGON,DRAGON
 Type2=GROUND,GROUND,GROUND
