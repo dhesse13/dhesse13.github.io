@@ -257,7 +257,7 @@ readStringFromFileAtPath = function(pathOfFileToReadFrom)
 {
 	var request = new XMLHttpRequest();
 	request.open("GET", pathOfFileToReadFrom, false);
-	request.send(null);
+	request.send();
 	var returnValue = request.responseText;
 
 	return returnValue;
