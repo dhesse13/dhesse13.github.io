@@ -22332,10 +22332,10 @@ Type1=GROUND
 Type2=NORMAL
 
 [850]
-Name=Basculegion
+Name=Basculegion,female
 InternalName=BASCULEGION
-Type1=WATER
-Type2=GHOST
+Type1=WATER,WATER
+Type2=GHOST,GHOST
 
 [850]
 Name=Sneasler
