@@ -297,9 +297,6 @@ function getPokemon(num){
 		while (!started){
 			if (text[i][0] == '['){
 				var Number = parseInt(text[i].replace('[','').replace(']',''));
-				if (Number == 807){
-					started = true;
-				}
 				i++;
 				var NameForm = text[i].replace('Name=','').split(',');
                 var Name = NameForm[0];
@@ -343,6 +340,9 @@ function getPokemon(num){
                 }
 			}
 			i++;
+            if (i >= text.length){
+                started = true;
+            }
 		}
 		filter();
     }
