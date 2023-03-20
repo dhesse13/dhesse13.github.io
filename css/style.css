@@ -76,11 +76,18 @@ button#skip {
 }
 .pokeImages {
 	margin:20px;
+	display:table-cell;
+	text-align: center;
+}
+.pokeImageGrid {
+	display:table;
+	margin:20px;
 }
 .fav {
 	margin:20px;
 }
 .egg {
+	margin:20px;
 	max-width:100px;
 	max-height:100px;
 }

@@ -178,8 +178,8 @@ function generate(){
             right = gameList[Math.floor(Math.random() * gameList.length)];
         }
     }
-    //$('#text1').text(left["Name"]);
-    //$('#text2').text(right["Name"]);
+    $('#pkm1txt').text(left["Name"]);
+    $('#pkm2txt').text(right["Name"]);
     $('#pic1').attr("src", left["MugImage"]);
     $('#pic2').attr("src", right["MugImage"]);
 }
@@ -319,22 +319,22 @@ function getPokemon(num){
                 if (NameForm.length > 0){
                     for (var j=0; j < NameForm.length; j++){
                         if (NameForm[j].search('mega') != -1){
-                            pokemon.push({Number: 666, Name: Name, MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: false, Mega: true});
+                            pokemon.push({Number: 666, Name: Name + " (" + NameForm[j].toLowerCase().split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ') + ")", MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: false, Mega: true});
                         }
                         else if (NameForm[j].search('alola') != -1){
-                            pokemon.push({Number: 800, Name: Name, MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: true, Mega: false});
+                            pokemon.push({Number: 800, Name: Name + " (" + NameForm[j].toLowerCase().split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ') + ")", MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: true, Mega: false});
                         }
                         else if (NameForm[j].search('galar') != -1 || NameForm[j].search('hisui') != -1 || NameForm[j].search('gmax') != -1){
-                            pokemon.push({Number: 850, Name: Name, MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: true, Mega: false});
+                            pokemon.push({Number: 850, Name: Name + " (" + NameForm[j].toLowerCase().split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ') + ")", MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: true, Mega: false});
                         }
                         else if (NameForm[j].search('paldea') != -1){
-                            pokemon.push({Number: 900, Name: Name, MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: true, Mega: false});
+                            pokemon.push({Number: 900, Name: Name + " (" + NameForm[j].toLowerCase().split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ') + ")", MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: true, Mega: false});
                         }
                         else if (NameForm[j].search('primal') != -1){
-                            pokemon.push({Number: 666, Name: Name, MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: true, Mega: false});
+                            pokemon.push({Number: 666, Name: Name + " (" + NameForm[j].toLowerCase().split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ') + ")", MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: true, Mega: false});
                         }
                         else {
-                            pokemon.push({Number: Number, Name: Name, MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: true, Mega: false});
+                            pokemon.push({Number: Number, Name: Name + " (" + NameForm[j].toLowerCase().split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ') + ")", MugImage: path + intName + '-' + NameForm[j].replaceAll(' ','_') + '.gif', Type1: (j < Type1s.length ? Type1s[j] : Type1), Type2: (j < Type2s.length ? Type2s[j] : Type2), Form: true, Mega: false});
                         }
                     }
                 }
