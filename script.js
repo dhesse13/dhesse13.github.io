@@ -22818,7 +22818,7 @@ InternalName=TANDEMAUS
 Type1=NORMAL
 
 [900]
-Name=Maushold,family of four
+Name=Maushold,family of three
 InternalName=MAUSHOLD
 Type1=NORMAL
 
